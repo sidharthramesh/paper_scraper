@@ -67,7 +67,7 @@ def write_save(object):
         pickle.dump(object,f)
         print "Save complete"
 def querry(bibtex):
-    return bibtex['title']
+    return bibtex['title']+' '+bibtex['author']
 def get_citedby(bibtex):
     results=scholarly.search_pubs_query(querry(bibtex))
     first_result=results.next()
