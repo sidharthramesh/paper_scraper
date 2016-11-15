@@ -18,8 +18,8 @@ def login():
         br = robobrowser.RoboBrowser()
         br.open(url)
         form=br.get_forms()[0]
-        form['username']= '150101312' #Change this
-        form['password']= 'tornadoalert' #Change this too
+        form['username']= '150101364' #Change this
+        form['password']= '67533177' #Change this too
         form.serialize()
         br.submit_form(form)
     if check_status() == -1:
